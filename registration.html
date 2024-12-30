@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title" class="text-center">TechCraft Registration Form</h1>
+  <form id="survey-form" action="connect.php" method="post">
+    <p id="description">Thank you for registering into our platform</p><br>
+    <fieldset class="fieldset">
+      <div class="sub-group">
+        <label class="left" id="name-label" for="name">Name:</label>
+        <input type="text" name="name" class="right input-field" id="name" placeholder="Enter your name" required>
+      </div>
+      <hr>
+      <div class="sub-group">
+        <label class="left" id="email-label" for="email">Email:</label>
+        <input type="email" name="email" class="right input-field" id="email" placeholder="Enter your email" required>
+      </div>
+      <hr>
+      <div class="sub-group">
+        <label class="left" id="number-label" for="number">Age (optional):</label>
+        <input type="number" name="age" placeholder="Age" min="1" max="100" class="right input-field" id="number">
+      </div>
+      <hr>
+      <div class="sub-group">
+        <label class="left" id="password-label" for="password">Password:</label>
+        <input type="password" name="password" class="right input-field" id="password" placeholder="Enter your Password"
+          required>
+      </div>
+      <hr>
+      <div class="form-control">
+        <br>
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>
